@@ -53,7 +53,7 @@ p {
 /* common css end  */
 
 /* navbar section start  */
-nav {
+nav{
   position: relative;
   padding: 18px 0px !important;
   background-color: rgba(22, 12, 109, 0.5);
@@ -73,6 +73,13 @@ nav ul {
 }
 nav li.activ a {
   color: #1bbf00;
+}
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:active,
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link,
+.navbar-nav .nav-link.dropdown-toggle.show {
+  color: #1bbf00 !important;
 }
 /* navbar section end  */
 
@@ -510,7 +517,7 @@ nav li.activ a {
 }
 .plan .row .carD img{
   width: 100%;
-  height: 160px;
+  height: 165px;
   object-fit: cover;
   background-color: #ECEDF0;
 }
