@@ -154,12 +154,13 @@ nav li.activ a {
   margin: 0 auto;
   gap: 25px;
 }
+
 .success .first-img {
   width: 220px;
   height: 350px;
   background-color: #c4c4c4;
   margin-top: -280px;
-  z-index: -9;
+  z-index: 199;
   border-radius: 20px;
 }
 .success .second-img {
@@ -167,7 +168,7 @@ nav li.activ a {
   height: 440px;
   background-color: #c4c4c4;
   margin-top: -260px;
-  z-index: -9;
+  z-index: 99;
   border-radius: 20px;
 }
 .success .third-img {
@@ -175,7 +176,7 @@ nav li.activ a {
   height: 320px;
   background-color: #c4c4c4;
   margin-top: -300px;
-  z-index: -9;
+  z-index: 999;
   border-radius: 20px;
 }
 .success .four-img {
@@ -183,7 +184,7 @@ nav li.activ a {
   height: 400px;
   background-color: #c4c4c4;
   margin-top: -150px;
-  z-index: -9;
+  z-index: 999;
   border-radius: 20px;
 }
 .success .text-part {
@@ -439,6 +440,14 @@ nav li.activ a {
 .impect .top .analaicis p:last-child{
   width: 309px;
 }
+.impect .impact-img{
+  width: 600px;
+  height: 424px;
+  overflow: hidden;
+}
+.impect .impact-img img{
+  width: 100%;
+}
 /* impect section end  */
 
 /* plan section start  */
@@ -553,7 +562,6 @@ nav li.activ a {
 .about-us .card p{
   width: 800px;
   color: #726E9E;
-  padding: 0 0px 0 px;
 }
 .about-us .card p:last-child{
   font-size: 16px;
@@ -602,7 +610,6 @@ nav li.activ a {
   background-color: #ddd;
   border-radius: 20px;
   overflow: hidden;
-  transition: transform 0.4s ease;
 }
 .like .img img{
   width: 100%;
@@ -610,6 +617,7 @@ nav li.activ a {
   border-radius: 20px;
   object-fit: cover;
   transform-origin: center center;
+  transition: transform 0.4s ease;
 }
 .like .img:hover img{
   transform: scale(1.1);
@@ -718,3 +726,199 @@ nav li.activ a {
   color: #1bbf00;
 }
 /* footer section end  */
+
+
+/* responsive  */
+
+@media (min-width:320px) and (max-width:575.99px){
+
+  h2 {
+  font-size: 30px;
+}
+h4{
+   font-size: 20px;
+}
+p {
+  font-size: 18px;
+  line-height: 40px;
+}
+.btn {
+  padding: 10px 18px;
+  font-size: 14px;
+ 
+}
+nav {
+  padding: 14px 0px !important;
+}
+nav ul {
+  gap: 20px;
+}
+.nav-link {
+  font-size: 14px;
+}
+.banner .banner-img img{
+  height: 700px;
+  object-fit: cover;
+}
+.banner .banner-img {
+  height: 700px;
+}
+.banner .banner-img .overlay{
+  height: 700px;
+}
+.banner .text-part {
+  margin-top: 146px;
+}
+.banner .text-part h1 {
+  font-size: 44px;
+  width: 100%;
+}
+.banner .text-part p {
+  font-size: 14px;
+  width: 100%;
+  padding: 10px 0 6px 0;
+}
+
+
+.success .images-part{
+  display: none;
+}
+.success img{
+  display: none;
+}
+.success .text-part{
+  flex-direction: column;
+   margin-top: 20px;
+}
+.success .text-part .text{
+  border: none;
+}
+.choose .left-part p {
+  width: 100%;
+  font-size: 14px;
+  line-height: 25px;
+}
+.choose .right p {
+  font-size: 14px;
+  line-height: 25px;
+  width: 100%;
+}
+.social-media {
+  padding: 50px 0;
+}
+.social-media .social-first p {
+  font-size: 14px;
+  line-height: 28px;
+  width: 100%;
+  margin: 20px 0 30px 0;
+}
+.social-media .card {
+  width: 100%;
+  height: 380px;
+}
+.impect{
+  padding: 50px 0 30px 0;
+}
+.impect p{
+  font-size: 14px;
+  width: 100%;
+  margin-top: 18px;
+}
+.impect .top .analaicis p{
+  font-size: 14px;
+  width: 100%;
+}
+.impect .top .analaicis p:last-child{
+  width: 100%;
+}
+.impect .impact-img{
+  display: none;
+}
+.impect .imt-img{
+  display: none;
+}
+
+.plan .row{
+  row-gap: 30px;
+}
+.about-us{
+  padding: 50px 0;
+}
+
+.about-us .client .arrow i{
+  width: 20px;
+  height: 20px;
+}
+
+.about-us .card p{
+  width: 100%;
+ 
+}
+.about-us .client{
+ gap: 10px;
+}
+.like{
+  padding: 50px 0;
+
+}
+.like .first-like{
+  flex-direction: column;
+}
+.like .img{
+  width: 100%;
+  height: 254px;
+}
+.like .first-like .text-part .top-part ul{
+  gap: 23px;
+  
+}
+.like .first-like .text-part .top-part ul li a{
+  font-size: 14px;
+}
+.like .first-like .text-part h4{
+  line-height: 30px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.like .section-img{
+  display: none;
+}
+.footer{
+  padding: 70px 0 30px 0;
+}
+.footer .footer-part{
+  flex-direction: column;
+  gap: 40px;
+}
+.footer .footer-part .image-part p{
+  font-size: 14px;
+  margin-top: 24px;
+   width: 100%;
+}
+.footer .footer-part ul{
+  margin-top: 28px;
+}
+.footer .footer-part ul li {
+ margin-top: 20px;
+}
+.footer .footer-part ul li a{
+  font-size: 16px;
+}
+.copy-righT .copy-right p{
+    font-size: 14px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  
+}
+.copy-righT .copy-right a{
+  display: none;
+}
+
+
+
+
+
+
+
+}
